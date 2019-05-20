@@ -1,0 +1,63 @@
+{
+	"sites": [{
+			"name": "Freshwater West Beach",
+			"coord": {
+				"lon": -5.063856,
+				"lat": 51.659123
+			},
+			"temp": 13.61,
+			"wind": {
+				"speed": 3.1,
+				"deg": 50
+			}
+		},
+		{
+			"name": "Bournemouth Beach",
+			"coord": {
+				"lon": -1.876771,
+				"lat": 50.719478
+			},
+			"temp": 10.46,
+			"wind": {
+				"speed": 1,
+				"deg": 100
+			}
+		},
+		{
+			"name": "Polzeath Beach",
+			"coord": {
+				"lon": -4.914901,
+				"lat": 50.572839
+			},
+			"temp": 11.21,
+			"wind": {
+				"speed": 7.2,
+				"deg": 80
+			}
+		},
+		{
+			"name": "Cayton Bay Beach",
+			"coord": {
+				"lon": -0.365603,
+				"lat": 54.246751
+			},
+			"temp": 8.43,
+			"wind": {
+				"speed": 2.1,
+				"deg": 90
+			}
+		},
+		{
+			"name": "Sennen Cove Beach",
+			"coord": {
+				"lon": -5.702157,
+				"lat": 50.077630
+			},
+			"temp": 11.18,
+			"wind": {
+				"speed": -25,
+				"deg": 80
+			}
+		}
+	]
+}
