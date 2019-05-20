@@ -87,7 +87,7 @@ var timer;
 
 function preload() {
   //load map of uk
-  img = loadImage("assets/uk.jpg");
+  img = loadImage("assets/amend uk map");
  ztemp =0;
  zwindspeed =0;
  zwinddir =0;
@@ -600,11 +600,11 @@ function best_surfspots(skill,j) {
   fill(0);
   text("Closest Surfing sites:",20,300);
   text("Km:",150,300);
-  text("Knots:",180,300);
+  text("Knots:",200,300);
   
     fill(255,255,255,255);
     noStroke();
-    rect(20,310,200,470);
+    rect(20,310,220,470);
   
   for (i=0; i < surfDistance.length; i++) {
  
@@ -619,7 +619,8 @@ function best_surfspots(skill,j) {
      select[i] = y_name;
     
     
-     var x_km = int(my_surf_dist[i][0]);
+     var x_km = (my_surf_dist[i][0]);
+         x_km = nf(x_km,2,2);
      var closet_order_place = SurfData[y_name].mname;
      var closet_order_km = x_km;
      var reverse = int(surfDistance.length-i-1);
@@ -643,7 +644,7 @@ function best_surfspots(skill,j) {
      fill(0);
      text(str(i+1)+".  " + closet_order_place,20,320+(13*i));
      text(closet_order_km,150,320+(13*i));
-     text(wind_spd,180,320+(13*i));
+     text(wind_spd,210,320+(13*i));
      
      //draw_surfsites(y_name) ;
      
