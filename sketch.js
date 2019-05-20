@@ -87,7 +87,7 @@ var timer;
 
 function preload() {
   //load map of uk
-  img = loadImage("assets/amend uk map");
+  img = loadImage("assets/uk.jpg");
  ztemp =0;
  zwindspeed =0;
  zwinddir =0;
@@ -185,7 +185,7 @@ function setup() {
   push;
   //rotateY(0.01);
   tint(255,255,255,40);
-  image(img, iX-95,iY-55 , iwidthX+60 , iheightY+150);
+  image(img, iX-90,iY-60 , iwidthX+60 , iheightY+150);
   pop;
   //image(img, 200 ,200 , 500 , 500);
   
@@ -600,11 +600,11 @@ function best_surfspots(skill,j) {
   fill(0);
   text("Closest Surfing sites:",20,300);
   text("Km:",150,300);
-  text("Knots:",200,300);
+  text("Knots:",180,300);
   
     fill(255,255,255,255);
     noStroke();
-    rect(20,310,220,470);
+    rect(20,310,200,470);
   
   for (i=0; i < surfDistance.length; i++) {
  
@@ -619,8 +619,7 @@ function best_surfspots(skill,j) {
      select[i] = y_name;
     
     
-     var x_km = (my_surf_dist[i][0]);
-         x_km = nf(x_km,2,2);
+     var x_km = int(my_surf_dist[i][0]);
      var closet_order_place = SurfData[y_name].mname;
      var closet_order_km = x_km;
      var reverse = int(surfDistance.length-i-1);
@@ -644,7 +643,7 @@ function best_surfspots(skill,j) {
      fill(0);
      text(str(i+1)+".  " + closet_order_place,20,320+(13*i));
      text(closet_order_km,150,320+(13*i));
-     text(wind_spd,210,320+(13*i));
+     text(wind_spd,180,320+(13*i));
      
      //draw_surfsites(y_name) ;
      
@@ -799,7 +798,7 @@ function draw_mypos(clong,clat,ccity) {
   var x = map(clong,longMin,longMax,longMinX,longMaxX);
   var y = map(clat,latMax,latMin,latMinY ,latMaxY+100);
   
-  rect(x,y,20,20);
+  rect(x,y,2,2);
   
   print("city name =",cityname,"x=",x,"y=",y);
   
@@ -812,7 +811,7 @@ function draw_mypos(clong,clat,ccity) {
   strokeWeight(1);
   stroke(0);
   //ellipse(x ,y,20,20);
-  rect(x,y-12,4,4);
+  rect(x,y-12,20,20);
   //scarborough
   // rect(600,350,20,20);
   // //bournemouth
@@ -823,7 +822,7 @@ function draw_mypos(clong,clat,ccity) {
   
   //SurfData[y_name].mnametextSize(20);
   fill(80,255);
-  strokeWeight(0);
+  strokeWeight(1);
   textSize(12);
   text(ccity,x-20,y-12);
   pop();
