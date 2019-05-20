@@ -87,14 +87,14 @@ var timer;
 
 function preload() {
   //load map of uk
-  img = loadImage("uk.jpg");
+  img = loadImage("assets/uk.jpg");
  ztemp =0;
  zwindspeed =0;
  zwinddir =0;
   zname ='';
   //LOAD SURFING DATA IN JSON
   
-   jdata= loadJSON("uksurfsites.json");
+   jdata= loadJSON("assets/uksurfsites.json");
   
  surfsites= jdata.sites;
 
@@ -128,7 +128,6 @@ function setup() {
   
  // createCanvas(400, 400);
    createCanvas(700, 800);
-   //createCanvas(windowWidth, windowHeight);
    
   
   // INPUT NEAREST CITY FIELD
