@@ -185,7 +185,7 @@ function setup() {
   push;
   //rotateY(0.01);
   tint(255,255,255,40);
-  image(img, iX-90,iY-60 , iwidthX+60 , iheightY+150);
+  image(img, iX-95,iY-55 , iwidthX+60 , iheightY+150);
   pop;
   //image(img, 200 ,200 , 500 , 500);
   
@@ -798,7 +798,7 @@ function draw_mypos(clong,clat,ccity) {
   var x = map(clong,longMin,longMax,longMinX,longMaxX);
   var y = map(clat,latMax,latMin,latMinY ,latMaxY+100);
   
-  rect(x,y,2,2);
+  rect(x,y,20,20);
   
   print("city name =",cityname,"x=",x,"y=",y);
   
@@ -811,7 +811,7 @@ function draw_mypos(clong,clat,ccity) {
   strokeWeight(1);
   stroke(0);
   //ellipse(x ,y,20,20);
-  rect(x,y-12,20,20);
+  rect(x,y-12,4,4);
   //scarborough
   // rect(600,350,20,20);
   // //bournemouth
@@ -822,7 +822,7 @@ function draw_mypos(clong,clat,ccity) {
   
   //SurfData[y_name].mnametextSize(20);
   fill(80,255);
-  strokeWeight(1);
+  strokeWeight(0);
   textSize(12);
   text(ccity,x-20,y-12);
   pop();
