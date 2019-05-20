@@ -127,8 +127,8 @@ function setup() {
   cityname ="";
   
  // createCanvas(400, 400);
-   //createCanvas(700, 800);
-   createCanvas(windowWidth, windowHeight);
+   createCanvas(700, 800);
+   //createCanvas(windowWidth, windowHeight);
    
   
   // INPUT NEAREST CITY FIELD
