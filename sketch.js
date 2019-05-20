@@ -128,7 +128,6 @@ function setup() {
   
  // createCanvas(400, 400);
    createCanvas(700, 800);
-  	 // createCanvas(windowWidth, windowHeight);
    
   
   // INPUT NEAREST CITY FIELD
@@ -185,7 +184,7 @@ function setup() {
   push;
   //rotateY(0.01);
   tint(255,255,255,40);
-  image(img, iX-90,iY-60 , iwidthX+60 , iheightY+150);
+  image(img, iX-99 ,iY-59, iwidthX+60 , iheightY+150);
   pop;
   //image(img, 200 ,200 , 500 , 500);
   
@@ -408,13 +407,13 @@ latMinY = iY - iheightY/2;
     
        // reset length of internal suurf array to zero evry loop
       // wait for for input of position to do somthine
-      SurfData.length=0;
+      // SurfData.length=0;
       // xlon.length=0 ;
       // xlat.length=0;
-      ztemp.length=0;
-      zwindspeed.length=0 ;
-      zwinddir.length=0;
-      zname.length =0;
+      // ztemp.length=0;
+      // zwindspeed.length=0 ;
+      // zwinddir.length=0;
+      // zname.length =0;
  
       var fuck_distance =0;
       //var lo1=  0.1278;
@@ -604,7 +603,7 @@ function best_surfspots(skill,j) {
   
     fill(255,255,255,255);
     noStroke();
-    rect(20,310,200,470);
+    rect(20,310,270,70);
   
   for (i=0; i < surfDistance.length; i++) {
  
@@ -728,7 +727,7 @@ function draw_surfsites(index) {
   // var y = map(Alat[index],latMax,latMin,latMinY-600 ,latMaxY+300);
   translate(175,180);
   var x = map(Alon[index],longMin,longMax,longMinX,longMaxX);
-  var y = map(Alat[index],latMax,latMin,latMinY ,latMaxY+100);
+  var y = map(Alat[index],latMax,latMin,latMinY ,latMaxY+90);
   
   print("index=", index,"Aname[index]=",Aname[index],"x=",x,"y=",y);
   
@@ -798,7 +797,7 @@ function draw_mypos(clong,clat,ccity) {
   var x = map(clong,longMin,longMax,longMinX,longMaxX);
   var y = map(clat,latMax,latMin,latMinY ,latMaxY+100);
   
-  rect(x,y,2,2);
+  rect(x,y,20,20);
   
   print("city name =",cityname,"x=",x,"y=",y);
   
@@ -811,7 +810,7 @@ function draw_mypos(clong,clat,ccity) {
   strokeWeight(1);
   stroke(0);
   //ellipse(x ,y,20,20);
-  rect(x,y-12,20,20);
+  rect(x,y-12,4,4);
   //scarborough
   // rect(600,350,20,20);
   // //bournemouth
