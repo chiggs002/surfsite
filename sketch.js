@@ -128,6 +128,7 @@ function setup() {
   
  // createCanvas(400, 400);
    createCanvas(700, 800);
+  	 // createCanvas(windowWidth, windowHeight);
    
   
   // INPUT NEAREST CITY FIELD
@@ -184,7 +185,7 @@ function setup() {
   push;
   //rotateY(0.01);
   tint(255,255,255,40);
-  image(img, iX-95 ,iY-60 , iwidthX+60 , iheightY+150);
+  image(img, iX-90,iY-60 , iwidthX+60 , iheightY+150);
   pop;
   //image(img, 200 ,200 , 500 , 500);
   
@@ -407,13 +408,13 @@ latMinY = iY - iheightY/2;
     
        // reset length of internal suurf array to zero evry loop
       // wait for for input of position to do somthine
-      // SurfData.length=0;
+      SurfData.length=0;
       // xlon.length=0 ;
       // xlat.length=0;
-      // ztemp.length=0;
-      // zwindspeed.length=0 ;
-      // zwinddir.length=0;
-      // zname.length =0;
+      ztemp.length=0;
+      zwindspeed.length=0 ;
+      zwinddir.length=0;
+      zname.length =0;
  
       var fuck_distance =0;
       //var lo1=  0.1278;
@@ -603,7 +604,7 @@ function best_surfspots(skill,j) {
   
     fill(255,255,255,255);
     noStroke();
-    rect(20,310,270,70);
+    rect(20,310,200,470);
   
   for (i=0; i < surfDistance.length; i++) {
  
