@@ -407,7 +407,7 @@ latMinY = iY - iheightY/2;
     
        // reset length of internal suurf array to zero evry loop
       // wait for for input of position to do somthine
-      // SurfData.length=0;
+    SurfData.length=0;
       // xlon.length=0 ;
       // xlat.length=0;
       // ztemp.length=0;
@@ -603,7 +603,7 @@ function best_surfspots(skill,j) {
   
     fill(255,255,255,255);
     noStroke();
-    rect(20,310,270,70);
+    rect(20,310,200,270);
   
   for (i=0; i < surfDistance.length; i++) {
  
